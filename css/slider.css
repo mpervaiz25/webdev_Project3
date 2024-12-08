@@ -4,3 +4,35 @@
   margin: 20px auto;
   max-width: 90%;
 }
+/* Picture Slider */
+#slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 600px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+.slider-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.5s ease;
+}
+
+.slider-image.hidden {
+  display: none;
+}
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
