@@ -1,38 +1,69 @@
-/* Google Map Styling */
-#map {
-  border: 2px solid #ccc;
-  margin: 20px auto;
-  max-width: 90%;
-}
-/* Picture Slider */
+/* General Slider Container Styling */
 #slider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
-  max-width: 600px;
-  margin: 20px auto;
-  overflow: hidden;
+  width: 80%; /* Responsive width */
+  max-width: 600px; /* Limit the max width */
+  margin: 20px auto; /* Center the slider horizontally */
+  overflow: hidden; /* Hide overflow to only show one image */
+  border: 2px solid #ccc; /* Optional: Add a border around the slider */
+  border-radius: 10px; /* Optional: Rounded corners */
 }
+
+/* Wrapper to group and slide images */
+.slider-wrapper {
+  display: flex; /* Images in a horizontal row */
+  transition: transform 0.5s ease-in-out; /* Smooth transition for sliding */
+}
+
+/* Individual Slider Images */
 .slider-image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  transition: opacity 0.5s ease;
+  width: 100%; /* Make each image fill the slider width */
+  display: none; /* Hide all images by default */
 }
 
-.slider-image.hidden {
-  display: none;
+.slider-image.active {
+  display: block; /* Show the currently active image */
 }
+
+/* Navigation Buttons */
 button {
-  margin: 5px;
-  padding: 10px 15px;
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+  position: absolute; /* Position relative to the slider container */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust vertical alignment */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  color: white; /* White text/icons */
+  border: none; /* Remove default borders */
+  cursor: pointer; /* Change cursor to pointer */
+  padding: 10px 15px; /* Add padding for better button size */
+  z-index: 10; /* Place above the slider content */
+  font-size: 18px; /* Adjust font size */
+  border-radius: 5px; /* Optional: Round button corners */
+  user-select: none; /* Prevent text selection on click */
 }
 
+/* Left Button */
+#prev {
+  left: 10px; /* Position to the left */
+}
+
+/* Right Button */
+#next {
+  right: 10px; /* Position to the right */
+}
+
+/* Add hover effects for buttons */
 button:hover {
-  background-color: #0056b3;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #slider {
+    width: 100%; /* Use full width for smaller screens */
+  }
+
+  button {
+    font-size: 16px; /* Slightly smaller buttons on small screens */
+    padding: 8px 12px;
+  }
 }
