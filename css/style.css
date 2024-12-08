@@ -1,0 +1,79 @@
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Georgia', serif;
+  color: #222;
+}
+
+/* Navigation styles */
+#main-navbar {
+  background-color: #0044cc;
+  padding: 10px 0;
+}
+
+#main-navbar ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#main-navbar ul li {
+  margin: 0 15px;
+}
+
+#main-navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#main-navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Section styles */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+/* Unique styles */
+#work-experience h4, #education h4 {
+  color: #444;
+}
+
+#skills ul li {
+  font-style: italic;
+}
+
+/* Header and footer consistency */
+header {
+  background-color: #0044cc;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}

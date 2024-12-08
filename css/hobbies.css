@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif; /* Imported font with fallback */
+  line-height: 1.6;
+  margin: 0;
+  background-color: #f4f4f9; /* Light background for the page */
+  color: #333; /* Dark gray text */
+  padding: 0 2rem; /* Add some padding to the content */
+}
+
+header {
+  background-color: #004d40; /* Dark green background */
+  padding: 1em 0;
+}
+
+header nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff; /* White text for links */
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
+header nav ul li a:hover {
+  background-color: #00796b; /* Teal color on hover */
+}
+
+#active-link {
+  background-color: #00796b; /* Highlight the active link */
+  border: 2px solid #004d40;
+}
+
+main {
+  max-width: 800px; /* Limit content width */
+  margin: 2rem auto; /* Center content */
+}
+
+main h1 {
+  font-size: 2.5rem;
+  color: #004d40; /* Match header color */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+main h4 {
+  font-size: 1.5rem;
+  color: #00796b;
+  margin-top: 2rem;
+}
+
+main p {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+#center {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+iframe {
+  width: 80%;
+  max-width: 600px; /* Maintain fluid layout */
+  height: 350px;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}

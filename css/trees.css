@@ -1,0 +1,95 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Georgia', serif;
+  color: #004400; /* Green tone for the Trees page */
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Navigation styles */
+#main-navbar {
+  background-color: #006600; /* Dark green for Trees page */
+  padding: 10px 0;
+}
+
+#main-navbar ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#main-navbar ul li {
+  margin: 0 15px;
+}
+
+#main-navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#main-navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Section styles */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+#intro {
+  font-size: 1.2rem;
+  text-align: justify;
+  background-color: #eef9f0; /* Light green background */
+  padding: 10px;
+  border-left: 4px solid #006600;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+ul li {
+  margin-bottom: 20px;
+}
+
+/* Images */
+img {
+  display: block;
+  margin: 10px auto;
+  border: 3px solid #006600;
+  border-radius: 10px;
+}
+
+/* Unique Styles for the Trees Page */
+h3, h4 {
+  text-align: left;
+}
+
+#tree-types h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#tree-types ul li p {
+  font-style: italic;
+}
