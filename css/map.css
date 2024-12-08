@@ -1,11 +1,111 @@
- /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
+ /* Basic reset for the page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header and navigation styling */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+  padding: 20px;
+}
+
+/* Map container styling */
+#map {
+  height: 100%;  
+  width: 100%;    /* Full width of the container */
+  border: 2px solid #ccc;  /* Border around the map */
+  margin-bottom: 20px;  /* Space below the map */
+  border-radius: 8px;  /* Rounded corners for the map container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow effect */
+}
+
+/* Title and paragraph styling */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Reset Map Button styling */
+#resetMap {
+  display: block;
+  width: 150px;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+#resetMap:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  #map {
+    height: 400px;  /* Adjust map height for smaller screens */
+  }
+
+  #resetMap {
+    width: 120px;  /* Make the button slightly smaller on mobile */
+    font-size: 1rem;
+  }
+}
