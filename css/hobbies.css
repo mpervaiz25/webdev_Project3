@@ -88,3 +88,43 @@ iframe {
   border-radius: 5px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
+/* General styles for slider section */
+#slider {
+  position: relative;
+  max-width: 600px; /* Slider width */
+  margin: 20px auto; /* Center the slider */
+  overflow: hidden; /* Prevent images from spilling out */
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+.slider-wrapper {
+  display: flex; /* Place images side by side */
+  transition: transform 0.5s ease-in-out; /* Smooth sliding transition */
+}
+
+.slider-image {
+  width: 100%;
+  flex-shrink: 0; /* Prevent the images from shrinking */
+  height: auto;
+}
+
+button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Hidden class for non-visible images */
+.hidden {
+  display: none;
+}
