@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/hobbies.css">
 		<link rel="stylesheet" href="css/slider.css">
+		<script src="js/script.js" defer></script>    <!-- JavaScript connection -->
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	
 	</head>
@@ -49,10 +50,14 @@
 			<section>
         <h4>Photo Gallery</h4>
         <div id="slider">
-          <img src="Media/Hiking1.jpg" alt="Hiking Photo 1" class="slider-image">
-          <img src="Media/Hiking2.jpg" alt="Hiking Photo 2" class="slider-image hidden">
-          <img src="Media/Hiking3.jpg" alt="Hiking Photo 3" class="slider-image hidden">
-        </div>
+					<div class="slider-wrapper">
+						<img src="Media/Hiking1.jpg" alt="Hiking Photo 1" class="slider-image active">
+						<img src="Media/Hiking2.jpg" alt="Hiking Photo 2" class="slider-image">
+						<img src="Media/Hiking3.jpg" alt="Hiking Photo 3" class="slider-image">
+					</div>
+				</div>
+			
+			
         <button id="prev">Previous</button>
         <button id="next">Next</button>
       </section>
